@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { LinkButton } from "./components/LinkButton";
 
 export const App = () => {
   const title: string = "Hello World!";
@@ -9,6 +10,7 @@ export const App = () => {
       <Link to='/test'>
         ボタン
       </Link>
+      <LinkButton text="ボタン" link="/test" />
     </div>
   );
 }
